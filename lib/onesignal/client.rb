@@ -42,9 +42,9 @@ module OneSignal
     end
 
     def csv_export extra_fields: nil, last_active_since: nil, segment_name: nil
-      post "players/csv_export?app_id=#{@app_id}", 
-        extra_fields: extra_fields, 
-        last_active_since: last_active_since&.to_i&.to_s, 
+      post "players/csv_export?app_id=#{@app_id}",
+        extra_fields: extra_fields,
+        last_active_since: last_active_since&.to_i&.to_s,
         segment_name: segment_name
     end
 

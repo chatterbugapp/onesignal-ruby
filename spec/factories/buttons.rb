@@ -6,4 +6,10 @@ FactoryBot.define do
 
     initialize_with { new(attributes) }
   end
+
+  factory :web_buttons, class: OneSignal::WebButtons do
+    buttons [{id: 'option_a', text: 'Option A' }, {id: 'option_b', text: 'Option B' }]
+
+    initialize_with { new(attributes) }
+  end
 end

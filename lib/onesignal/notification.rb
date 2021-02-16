@@ -24,7 +24,7 @@ module OneSignal
       @filters           = params[:filters]
       @sounds            = params[:sounds]
       @buttons           = params[:buttons]
-      @buttons           = params[:web_buttons]
+      @web_buttons       = params[:web_buttons]
     end
 
     def as_json options = {}
